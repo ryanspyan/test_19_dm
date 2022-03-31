@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+<link rel="stylesheet" href="kontakt.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="parent">
+        <div class="horizontal-nav">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a  href="produkter.html">Cars</a></li>
+                <li><a class="active" href="kontakt.html">Request</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+        <img class="logo" src="bilder/bilhubben.png" alt="Logo" width="
+150px">
+        <br>
+        <br>
+
+<br>
+<br>
+    <div class="formu">    
+<form method="post" action="http://www.bestonline.se/formripper/rippform.php">
+
+    <div class="formulär">
+        <div class="Rubrik">Enter your request</div>
+        <form action="" method="post">
+        <label><span>Name <span></span></span><input type="text" class="input-field" name="field1" value="" /></label>
+        <label><span>Email <span></span></span><input type="text" class="input-field" name="field2" value="" /></label>
+        
+        <label><span>Cause</span><select name="field4" class="select-field">
+        <option >Car Request</option>
+        
+        <option >Problem with website</option>
+        <option>Other</option>
+        </select></label>
+        <label><span>Message <span></span></span><textarea name="field5" class="textarea-field"></textarea></label>
+        <label><span> </span><input type="submit" value="Submit" /></label>
+      <br><br>
+        <input type="hidden" name="s_email" value="ryan.krook@elev.ntig.se">
+        <input type="hidden" name="s_retur" value="www.google.se">
+      
+        
+      
+        
+        
+    
+    
+    </form>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div id="sidebar">
+            <div class="toggle-btn" onclick="toggleSidebar(this)">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="list">
+                <a href="index.html">
+                    <div class="item">Home</div>
+                </a>
+                <a href="produkter.html">
+                    <div class="item">Cars </div>
+                </a>
+                <a href="kontakt.html">
+                    <div class="item">Request</div>
+                </a>
+                <a href="about.html">
+                    <div class="item">About Us</div>
+                </a>
+            </div>
+        </div>
+    
+        <script>function toggleSidebar(ref) {
+                document.getElementById("sidebar").classList.toggle('active');
+            }
+    
+        </script>
+    
+</body>
+</html>

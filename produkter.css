@@ -1,0 +1,622 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+   
+    font-family: 'Josefin Sans', sans-serif;
+  
+  
+  
+  }
+
+
+  
+  body{
+
+overflow-y:auto ;
+
+  
+  
+  
+  }
+  
+  .parent{
+
+    display: grid;
+    grid-template-areas: "head head head logo"
+    "nav nav nav nav"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "footer footer footer footer";
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(6, auto);
+
+
+    width: auto;
+
+
+
+}
+
+.logo{
+
+grid-area: logo;
+float: right;
+position: relative;
+width:100%;
+}
+
+@media screen and (min-width: 640px) {
+  #sidebar{
+    position:absolute;
+    top:0px;
+    left:-200px;
+    width:200px;
+    height:100%;
+    background:#a2a7ac;
+    transition:all 300ms linear;
+    z-index: 1;
+  display: none;  
+  }
+}
+
+
+   
+
+#sidebar {
+    position:absolute;
+    top:0px;
+    left:-200px;
+    width:200px;
+    height:100%;
+    background:#151719;
+    transition:all 300ms linear;
+    z-index: 1;
+
+
+  }
+  #sidebar.active {
+    left:0px;
+  }
+  #sidebar .toggle-btn {
+    position:absolute;
+    left:220px;
+    top:10px;
+  }
+  #sidebar .toggle-btn span {
+    display:block;
+    width:30px;
+    height:5px;
+    background:#151719;
+    margin:5px 0px;
+    cursor:pointer;
+  }
+  #sidebar div.list div.item {
+    padding:15px 10px;
+    border-bottom:1px solid #444;
+    color:#fcfcfc;
+    text-transform:uppercase;
+    font-size:15px;
+  }
+                    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+@media screen and (max-width: 640px) {
+
+  .horizontal-nav{
+  grid-area: nav;
+display: none ;
+
+
+
+}}
+
+
+
+
+
+@media screen and (min-width: 640px) {
+
+  .horizontal-nav{
+  grid-area: nav;
+display: block;
+
+
+
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(199, 190, 190);
+}
+
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover{
+
+background-color: rgba(255, 0, 0, 0.315);
+
+
+
+}}
+ 
+.produkt{
+
+    grid-area:main ;
+
+}
+.produkt-grid{
+display: grid;
+grid-template-areas: "ett tva tre "
+"fyra fem sex "
+"sju atta nio "
+"tio elva tolv "
+"treton fjorton femton ";
+
+grid-template-columns: repeat(3, minmax(0, 1fr));
+grid-template-rows: repeat(5, auto);
+
+
+}
+
+
+
+.produkt-card{
+
+padding: 20px;
+text-align: center;
+width: 300px;
+transition: all 300ms;
+font-weight: bold;
+margin: auto;
+
+}
+
+.produkt-card:hover{
+
+transform: scale(1.07);
+
+}
+
+.prd1{
+
+grid-area: ett;
+margin-top: 50px;
+
+
+
+}
+
+
+
+
+.prd2{
+
+grid-area: tva;
+margin-top: 0px;
+}
+
+
+.prd3{
+grid-area: tre;
+margin: auto;
+}
+
+.prd4{
+  grid-area: fyra;
+  margin: auto;
+  }
+
+
+  .prd5{
+    grid-area: fem;
+    margin: auto;
+    }
+
+    .prd6{
+      grid-area: sex;
+      margin: auto;
+      }
+
+    
+      .prd7{
+        grid-area: sju;
+        margin: auto;
+        }
+    
+    
+    
+        .prd8{
+          grid-area: atta;
+          margin: auto;
+        
+         
+
+          }
+    
+    
+    .prd10{
+
+      grid-area: tio;
+      margin: auto;
+    
+    }
+    
+    
+    .prd11{
+
+      grid-area: elva;
+      margin: auto;
+    
+    }
+    .prd12{
+
+      grid-area: tolv;
+      margin: auto;
+    
+    }
+    .prd13{
+
+      grid-area: treton;
+      margin: auto;
+    
+    }
+    .prd14{
+
+      grid-area: fjorton;
+      margin: auto;
+    
+    }
+    .prd15{
+
+      grid-area: femton;
+      margin: auto;
+    
+    }
+    .prd16{
+
+      grid-area: sexton;
+      margin: auto;
+    
+    }
+    
+    
+     
+    .active{
+
+      background-color:  rgba(255, 0, 0, 0.315);
+      
+      }
+      
+     
+
+      @media screen and (max-width:800px ) and (min-width:600px) {
+
+        
+        .produkt{
+
+          grid-area:main ;
+      
+      }
+      .produkt-grid{
+      display: grid;
+      grid-template-areas: "ett tva" 
+      "tre fyra"
+      "fem sex"
+      "sju atta"
+      "nio tio"
+      "elva tolv"
+      "treton fjorton"
+      "femton sexton";
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(8fr, auto);
+      
+      
+      }
+      
+      
+      
+      .produkt-card{
+      
+      padding: 20px;
+      text-align: center;
+      width: 300px;
+      transition: all 300ms;
+      font-weight: bold;
+      margin: auto;
+      
+      }
+      
+      .produkt-card:hover{
+      
+      transform: scale(1.07);
+      
+      }
+      
+      .prd1{
+      
+      grid-area: ett;
+      margin: auto;
+      
+      }
+      
+      
+      
+      
+      
+      .prd2{
+      
+      grid-area: tva;
+      margin: auto;
+      }
+      
+      
+      .prd3{
+      grid-area: tre;
+      margin: auto;
+      }
+      
+      .prd4{
+        grid-area: fyra;
+        margin: auto;
+        }
+      
+      
+        .prd5{
+          grid-area: fem;
+          margin: auto;
+          }
+      
+          .prd6{
+            grid-area: sex;
+            margin: auto;
+            }
+      
+          
+            .prd7{
+              grid-area: sju;
+              margin: auto;
+              }
+          
+          
+          
+              .prd8{
+                grid-area: atta;
+                margin: auto;
+                }
+          
+          
+          .prd10{
+      
+            grid-area: tio;
+            margin: auto;
+          
+          }
+          
+          
+          .prd11{
+      
+            grid-area: elva;
+            margin: auto;
+          
+          }
+          .prd12{
+      
+            grid-area: tolv;
+            margin: auto;
+          
+          }
+          .prd13{
+      
+            grid-area: treton;
+            margin: auto;
+          
+          }
+          .prd14{
+      
+            grid-area: fjorton;
+            margin: auto;
+          
+          }
+          .prd15{
+      
+            grid-area: femton;
+            margin: auto;
+          
+          }
+          .prd16{
+      
+            grid-area: sexton;
+            margin: auto;
+          
+          }
+          
+          
+           
+          .active{
+      
+            background-color:  rgba(255, 0, 0, 0.315);
+            
+            }
+      
+      
+      }
+
+
+
+      @media screen and (max-width:600px) {
+
+        
+        .produkt{
+
+          grid-area:main ;
+      
+      }
+      .produkt-grid{
+      display: block;
+      
+      
+      }
+      
+      
+      
+      .produkt-card{
+      
+      padding: 20px;
+      text-align: center;
+      width: 300px;
+      transition: all 300ms;
+      font-weight: bold;
+      margin: auto;
+      
+      }
+      
+      .produkt-card:hover{
+      
+      transform: scale(1.07);
+      
+      }
+      
+      .prd1{
+      
+      grid-area: ett;
+      margin: auto;
+      
+      }
+      
+      
+      
+      
+      
+      .prd2{
+      
+      grid-area: tva;
+      margin: auto;
+      }
+      
+      
+      .prd3{
+      grid-area: tre;
+      margin: auto;
+      }
+      
+      .prd4{
+        grid-area: fyra;
+        margin: auto;
+        }
+      
+      
+        .prd5{
+          grid-area: fem;
+          margin: auto;
+          }
+      
+          .prd6{
+            grid-area: sex;
+            margin: auto;
+            }
+      
+          
+            .prd7{
+              grid-area: sju;
+              margin: auto;
+              }
+          
+          
+          
+              .prd8{
+                grid-area: atta;
+                margin: auto;
+                }
+          
+          
+          .prd10{
+      
+            grid-area: tio;
+            margin: auto;
+          
+          }
+          
+          
+          .prd11{
+      
+            grid-area: elva;
+            margin: auto;
+          
+          }
+          .prd12{
+      
+            grid-area: tolv;
+            margin: auto;
+          
+          }
+          .prd13{
+      
+            grid-area: treton;
+            margin: auto;
+          
+          }
+          .prd14{
+      
+            grid-area: fjorton;
+            margin: auto;
+          
+          }
+          .prd15{
+      
+            grid-area: femton;
+            margin: auto;
+          
+          }
+          .prd16{
+      
+            grid-area: sexton;
+            margin: auto;
+          
+          }
+          
+          
+           
+          .active{
+      
+            background-color:  rgba(255, 0, 0, 0.315);
+            
+            }
+      
+      
+      }
+      
+
+
+      a{
+
+color: black;
+text-decoration: none;
+      }

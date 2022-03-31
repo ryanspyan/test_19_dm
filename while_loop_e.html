@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+        <input type="text" id="ruta" placeholder="tal">
+	<button id="knapp">Summera alla tal från 1 till och med ditt heltal</button>
+	<div id="ruta2"></div>
+
+	<script>
+		
+        document.getElementsById("knapp")[0].addEventListener("click", funktion);
+
+		function funktion() {
+			document.getElementById("ruta2").innerHTML = "";
+			var inmatning = document.getElementById("ruta").value;
+			var resultat = parseFloat(inmatning);
+
+			var summa = 0;
+			var nummer = 1;
+
+			while (nummer <= resultat) {
+				summa += nummer;
+				if (nummer === resultat)
+					document.getElementById("ruta2").innerHTML += summa;
+				nummer++;
+			}
+		}
+    </script>
+</body>
+</html>

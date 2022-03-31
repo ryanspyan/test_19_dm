@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GT63</title>
+    <link rel="stylesheet" href="article1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Josefin+Sans:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="parent">
+        <div class="horizontal-nav">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="produkter.html">Cars</a></li>
+                <li><a href="kontakt.html">Request</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            </ul>
+
+       
+
+        </div>
+        <img class="logo" src="bilder/bilhubben.png" alt="Logo" width="
+        150px">
+
+
+        
+
+
+
+
+        <div class="article">
+
+            <div class="title"> Mercedes GT63s AMG</div>
+
+
+<div class="beskrivning"> <h3>The engine of this car produces a maximum power of 639 PS <br> (630 bhp - 470 kW) at 5500 rpm and a maximum torque of 900 Nm 
+    (663 lb.ft) at 2500 rpm. The power is transmitted to the road by the all wheel drive (AWD) with a 9 speed Sequential Automatic gearbox.
+
+    
+    
+    <br> 
+    <br> SPECS</h3>
+     <br> 
+
+     Mercedes AMG GT63s 4Matic+ Coupé <br>
+4.0 L V8 Biturbo<br>
+639 HP <br>
+0-100: 3.1s
+
+
+
+
+    <br><br><br><br>
+
+
+    
+
+
+</select></label>
+
+<br><br><br><br> <strong>1 500 000 kr</strong>
+
+</div>
+
+
+            
+
+
+
+
+
+<div class="produkt-bild">
+
+
+
+                <div class="slideshow-container">
+
+
+                    <div class="bilder">
+
+                        <img src="bilder/gtsfram.png" style="max-width:600px">
+
+                    </div>
+
+                    <div class="bilder">
+                        <img src="bilder/gtsbak.png" style="max-width:600px">
+
+                    </div>
+
+                    
+
+                    </div>
+
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <div class="hitta"> <h3> Hitta på blocket!</h3> </div> <a href="https://www.blocket.se/annonser/hela_sverige/fordon/bilar?cg=1020&cxpf=15&q=Mercedes+GT63&sort=price"> <button> <img src="bilder/blocket-logo.png" class="blocketpng"> </div> </button></a>
+                </div>
+                <br>
+
+
+                <div style="text-align:center">
+                    
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div id="sidebar">
+                <div class="toggle-btn" onclick="toggleSidebar(this)">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="list">
+                    <a href="index.html">
+                        <div class="item">Hem</div>
+                    </a>
+                    <a href="produkter.html">
+                        <div class="item">Produkter </div>
+                    </a>
+                    <a href="kontakt.html">
+                        <div class="item">Kontakt</div>
+                    </a>
+                    <a href="about.html">
+                        <div class="item">Om Oss</div>
+                    </a>
+                </div>
+            </div>
+
+            <script>function toggleSidebar(ref) {
+                    document.getElementById("sidebar").classList.toggle('active');
+                }
+
+            </script>
+
+
+
+            <script>
+
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("bilder");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+
+
+
+            </script>
+</body>
+
+</html>

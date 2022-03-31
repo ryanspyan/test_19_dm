@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+<body>
+	<input type="text"  id="term1">
+	<input type="text"  id="term2">
+	<input type="text"  id="term3">
+
+	<button id="knapp">tryck här</button>
+
+	<div id="ruta"></div>
+<script >
+	document.getElementById("knapp").addEventListener("click", funktion);
+
+	function funktion() {
+		
+        
+        var terma1 = parseInt(document.getElementById("term1").value);
+		var terma2 = parseInt(document.getElementById("term2").value);
+		var terma3 = parseInt(document.getElementById("term3").value);
+	var summa = terma1 + terma2 + terma3;
+		
+
+		document.getElementById("ruta").innerHTML = summa / 3;
+	}
+</script>
+</body>
+</html>

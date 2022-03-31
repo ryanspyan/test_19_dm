@@ -1,0 +1,231 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  body{
+
+overflow-y:auto ;
+
+  
+  
+  
+  }
+  
+  .parent{
+
+    display: grid;
+    grid-template-areas: "head head head logo"
+    "nav nav nav nav"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "footer footer footer footer";
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(6, auto);
+
+
+    width: auto;
+
+
+
+}
+
+.logo{
+
+grid-area: logo;
+float: right;
+position: relative;
+width:100%;
+}
+
+@media screen and (min-width: 640px) {
+  #sidebar{
+    position:absolute;
+    top:0px;
+    left:-200px;
+    width:200px;
+    height:100%;
+    background:#a2a7ac;
+    transition:all 300ms linear;
+    z-index: 1;
+  display: none;  
+  }
+}
+
+
+   
+
+#sidebar {
+    position:absolute;
+    top:0px;
+    left:-200px;
+    width:200px;
+    height:100%;
+    background:#151719;
+    transition:all 300ms linear;
+    z-index: 1;
+
+
+  }
+  #sidebar.active {
+    left:0px;
+  }
+  #sidebar .toggle-btn {
+    position:absolute;
+    left:220px;
+    top:10px;
+  }
+  #sidebar .toggle-btn span {
+    display:block;
+    width:30px;
+    height:5px;
+    background:#151719;
+    margin:5px 0px;
+    cursor:pointer;
+  }
+  #sidebar div.list div.item {
+    padding:15px 10px;
+    border-bottom:1px solid #444;
+    color:#fcfcfc;
+    text-transform:uppercase;
+    font-size:15px;
+  }
+                    
+
+
+
+
+
+
+
+
+@media screen and (max-width: 640px) {
+
+  .horizontal-nav{
+  grid-area: nav;
+display: none ;
+
+
+
+}}
+
+
+
+
+
+@media screen and (min-width: 640px) {
+
+  .horizontal-nav{
+  grid-area: nav;
+display: block;
+
+
+
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(199, 190, 190);
+}
+
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover{
+
+background-color: rgba(255, 0, 0, 0.315);
+
+
+
+}}
+
+
+.active{
+
+background-color:  rgba(255, 0, 0, 0.315);
+
+}
+
+
+
+
+
+
+
+.formu{
+grid-area: main;
+    display: flex;
+justify-content: center;
+align-items: center;
+padding: 30px;
+
+
+}
+
+
+.form-style-2{
+	max-width: 500px;
+	padding: 20px 12px 10px 20px;
+	
+}
+.Rubrik{
+	font-weight: bold;
+	border-bottom: 2px solid #ddd;
+	margin-bottom: 20px;
+	font-size: 15px;
+	padding-bottom: 3px;
+}
+.formulär label{
+	display: block;
+	margin: 0px 0px 15px 0px;
+}
+.formulär label > span{
+	width: 100px;
+	font-weight: bold;
+	float: left;
+	padding-top: 8px;
+	padding-right: 5px;
+}
+
+
+
+
+.formulär input.input-field, .form-style-2 .select-field{
+	width: 300px;	
+}
+
+.formulär .textarea-field{
+	height:100px;
+	width: 55%;
+}
+.formulär input[type=submit],
+.formulär input[type=button]{
+	border: none;
+	padding: 8px 15px 8px 15px;
+	background: #a2a7ac;
+	color: #fff;
+	;
+}
+.formulär input[type=submit]:hover,
+.formulär input[type=button]:hover{
+	background: rgba(255, 0, 0, 0.315);
+	color: #fff;
+}
+

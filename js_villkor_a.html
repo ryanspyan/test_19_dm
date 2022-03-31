@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="term1"> <input type="text" id="term2"> <button id="knapp">Knapp</button>
+
+    <br>
+
+    <div id="ruta"></div>
+
+
+
+
+
+<script>
+
+document.getElementById("knapp").addEventListener("click",funktion);
+
+function funktion(){
+
+  
+  
+    if (document.getElementById("term1").value > document.getElementById("term2").value){
+        document.getElementById("ruta").innerHTML = document.getElementById("term1").value;
+    }
+    else if (document.getElementById("term1").value < document.getElementById("term2").value){
+        document.getElementById("ruta").innerHTML = document.getElementById("term2").value;
+    }
+
+
+
+}
+
+
+</script>
+</body>
+</html>

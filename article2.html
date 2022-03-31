@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW M4</title>
+    <link rel="stylesheet" href="article1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Josefin+Sans:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="parent">
+        <div class="horizontal-nav">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="produkter.html">Cars</a></li>
+                <li><a href="kontakt.html">Request</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            </ul>
+
+
+
+        </div>
+        <img class="logo" src="bilder/bilhubben.png" alt="Logo" width="
+        150px">
+
+
+ 
+
+
+
+        <div class="article">
+
+            <div class="title"> BMW M4 </div>
+
+
+<div class="beskrivning"><h3>Letar du efter en klassisk bakhjulsdriven bil att leka med? <br> <br> Då kommer du inte gå fel med denna bil.</h3>
+    <br> BMW M4 Coupé 
+     <br>
+     
+     3.0L twin-turbocharged I6
+      <br>
+      431 HP 
+    
+      <br>0-100: 4.2s  <br>
+
+    <br><br><br><br>
+    
+
+
+</select></label>
+<br><br><br><br> <strong> 500 000 kr</strong>
+
+</div>
+
+
+            
+
+
+
+
+
+<div class="produkt-bild">
+
+
+
+                <div class="slideshow-container">
+
+
+                    <div class="bilder">
+
+                        <img src="bilder/m4fram.png" style="max-width:700px">
+
+                    </div>
+                    <div class="hitta"> <h3> Hitta på blocket!</h3> </div> <a href="https://www.blocket.se/annonser/hela_sverige/fordon/bilar?cg=1020&cxpf=16&q=BMW+M4&sort=price"> <button> <img src="bilder/blocket-logo.png" class="blocketpng"> </div> </button></a>
+                    
+
+
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div id="sidebar">
+                <div class="toggle-btn" onclick="toggleSidebar(this)">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="list">
+                    <a href="index.html">
+                        <div class="item">Hem</div>
+                    </a>
+                    <a href="produkter.html">
+                        <div class="item">Produkter </div>
+                    </a>
+                    <a href="kontakt.html">
+                        <div class="item">Kontakt</div>
+                    </a>
+                    <a href="about.html">
+                        <div class="item">Om Oss</div>
+                    </a>
+                </div>
+            </div>
+
+            <script>function toggleSidebar(ref) {
+                    document.getElementById("sidebar").classList.toggle('active');
+                }
+
+            </script>
+
+
+
+            <script>
+
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("bilder");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+
+
+
+            </script>
+</body>
+
+</html>
