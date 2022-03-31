@@ -42,7 +42,238 @@
 
 <div class="beskrivning">Car info
 
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polestar</title>
+    <link rel="stylesheet" href="article1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Josefin+Sans:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="parent">
+        <div class="horizontal-nav">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="produkter.html">Cars</a></li>
+                <li><a href="kontakt.html">Request</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+
+
+
+        </div>
+
+        <img class="logo" src="bilder/bilhubben.png" alt="Logo" width="
+        150px">
+
+        
+
+
+
+
+        <div class="article">
+
+            <div class="title">Polestar Engineered Volvo S60 T8<br> </div>
+
+
+<div class="beskrivning"> <h3>From the Twin Engine hybrid powerhouse in the Volvo S60 T8 that makes 407 PS with a twisting force 640 Nm, it does the century sprint in 4.4 seconds and makes the S60 one of the quickest cars you can buy for the price of around 580 000 SEK.
+   
+    
+    <br> 
+    <br> SPECS</h3>
+     <br> 
+
+     Volvo S60 T8 AWD Polestar Engineered Recharge <br> 
+     2.0 I4 <br>  
+405 HP  <br> 
+0-100: 4.4s
+
+
+
+
+    <br><br><br><br>
+
+
+    <label>Färg  <br><br> <select>
+    <option >Röd</option>
+    <option >Blå</option>
+   
+
+
+</select></label>
+
+<br><br><br><br> <strong>571 000 kr</strong>
+
+</div>
+
+
+            
+
+
+
+
+
+<div class="produkt-bild">
+
+
+
+                <div class="slideshow-container">
+
+
+                    <div class="bilder">
+
+                        <img src="bilder/s601.jpg" style="max-width:600px">
+
+                    </div>
+
+                    <div class="bilder">
+                        <img src="bilder/s602.jpg" style="max-width:600px">
+
+                    </div>
+                    <div class="bilder">
+                        <img src="bilder/s603.jpg" style="max-width:600px">
+
+                    </div>
+                    <div class="bilder">
+                        <img src="bilder/s604.jpg" style="max-width:600px">
+
+                    </div>
+                   
+
+                    </div>
+
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <div class="hitta"> <h3> Hitta på blocket!</h3> </div> <a href="https://www.blocket.se/annonser/hela_sverige/fordon/bilar?cg=1020&cxpf=14&q=Volvo+S60+T8+Polestar&sort=price&mys=2020"> <button> <img src="bilder/blocket-logo.png" class="blocketpng"> </div> </button></a>
+                </div>
+                <br>
+
+
+                <div style="text-align:center">
+                    
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div id="sidebar">
+                <div class="toggle-btn" onclick="toggleSidebar(this)">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="list">
+                    <a href="index.html">
+                        <div class="item">Hem</div>
+                    </a>
+                    <a href="produkter.html">
+                        <div class="item">Produkter </div>
+                    </a>
+                    <a href="kontakt.html">
+                        <div class="item">Kontakt</div>
+                    </a>
+                    <a href="about.html">
+                        <div class="item">Om Oss</div>
+                    </a>
+                </div>
+            </div>
+
+            <script>function toggleSidebar(ref) {
+                    document.getElementById("sidebar").classList.toggle('active');
+                }
+
+            </script>
+
+
+
+            <script>
+
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("bilder");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+
+
+
+            </script>
+</body>
+
+</html>
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+
 <html lang="en">
 
 <head>
