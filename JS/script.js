@@ -1,1 +1,0 @@
-document.getElementById("copyright").innerHTML = "copyright 19_dm;"
