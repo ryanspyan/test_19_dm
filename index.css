@@ -289,5 +289,8 @@ button:active {
 .startsidav70{
 width:45%;
 margin-top:10%;
-TEXT-align:center;
+text-align:center;
+border-radius:50%;
+
+    
 }
